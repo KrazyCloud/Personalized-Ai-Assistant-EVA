@@ -1,0 +1,201 @@
+message,intent
+Add buy groceries,add
+Create a meeting,add
+Add call John,add
+Put laundry on the to-do list,add
+Schedule a doctor's appointment,add
+Buy a birthday gift for Sarah,add
+Add 'Write report' task,add
+Pick up dry cleaning,add
+Pay bills,add
+Order office supplies,add
+Add dentist appointment for Monday,add
+Add item to my list,add
+Add 'Read a book' to the list,add
+Add 'Go for a run' as a task,add
+Add 'Prepare presentation' to the tasks,add
+Create a shopping list,add
+Add 'Water the plants' to my to-do list,add
+View my tasks,view
+Show me the tasks,view
+What do I have to do?,view
+List my tasks,view
+View to-do list,view
+Check tasks,view
+Show the list,view
+Display my to-do list,view
+What tasks are on my list?,view
+Display upcoming tasks,view
+List all tasks,view
+Delete the first task,delete
+Remove the meeting,delete
+Take 'Walk the dog' off my list,delete
+Delete the third item from the list,delete
+Remove 'Buy groceries' from tasks,delete
+Delete 'Pay bills',delete
+Remove 'Go for a run' task,delete
+Delete 'Doctor's appointment' from the list,delete
+Clear the to-do list,delete
+Remove all tasks,delete
+Exit,exit
+Quit,exit
+Goodbye,exit
+Close,exit
+Stop,exit
+Terminate,exit
+End,exit
+Finish,exit
+Shutdown,exit
+Bye-bye,exit
+Sayonara,exit
+Farewell,exit
+See you later,exit
+Get lost,exit
+Ciao,exit
+Good morning,exit
+Add call Mom to tasks,add
+Add 'Fix the car' to my list,add
+Add 'Buy tickets' to to-do list,add
+View upcoming events,view
+List my appointments,view
+Display meetings,view
+What do I have scheduled?,view
+Check the to-do list,view
+Delete the last task,delete
+Remove 'Go to the gym',delete
+Delete 'Read emails' from tasks,delete
+Exit the chatbot,exit
+Quit the program,exit
+Add 'Send thank-you notes' to the list,add
+Create a new task,add
+Add 'Paint the fence' as a task,add
+Add 'Take the dog for a walk',add
+View tasks for today,view
+What are my tasks?,view
+Show my tasks,view
+Delete 'Buy groceries',delete
+Remove 'Go for a run' from list,delete
+Delete 'Dentist appointment',delete
+Delete 'Call John' from tasks,delete
+Clear my tasks,delete
+Clear the list,delete
+Delete all tasks,delete
+Exit the chat,exit
+Quit the chatbot,exit
+Goodbye chatbot,exit
+Add 'Finish homework' to tasks,add
+Create a reminder,add
+Add 'Submit report' task,add
+Add 'Buy flowers' to the list,add
+View my to-do list,view
+Check the tasks,view
+What's on my list?,view
+Delete the first item,delete
+Remove the last task,delete
+Delete 'Book flights',delete
+Delete 'Go to the bank',delete
+Remove 'Buy groceries' from to-do list,delete
+Delete 'Clean the garage',delete
+Exit the conversation,exit
+Quit the chat,exit
+Goodbye chat,exit
+Add 'Call Sarah' to my tasks,add
+Add 'Fix the roof' to the list,add
+Add 'Buy new shoes' to the to-do list,add
+View upcoming appointments,view
+List my upcoming events,view
+Display scheduled meetings,view
+What appointments do I have?,view
+Check my to-do list,view
+Show my tasks for today,view
+What tasks do I need to complete?,view
+Show me my current tasks,view
+Delete 'Call Mom',delete
+Remove 'Wash the car',delete
+Delete 'Buy groceries' from my tasks,delete
+Remove 'Clean the house',delete
+Delete 'Pay utility bills',delete
+Remove 'Go to the park' task,delete
+Delete 'Visit the doctor' from the list,delete
+Clear my to-do list,delete
+Remove all pending tasks,delete
+Terminate the chatbot,exit
+Finish the conversation,exit
+Close the chat,exit
+Stop the program,exit
+Exit the application,exit
+Say goodbye,exit
+"Farewell, chatbot",exit
+Good night,exit
+Add 'Call John' as a reminder,add
+Add 'Buy a new laptop' to my list,add
+Add 'Schedule a meeting' to the tasks,add
+Add 'Book flight tickets' to the list,add
+Remove 'Go for a run' from my list,delete
+Delete 'Call John',delete
+Clear the list of pending tasks,delete
+Delete all items,delete
+End the chat,exit
+Quit the chatbot application,exit
+Say goodbye to the chatbot,exit
+Add 'Finish homework' to my tasks,add
+Create a reminder for the meeting,add
+Add 'Submit report' as a task,add
+What's on my list of tasks?,view
+Delete the first item from the list,delete
+Remove 'Buy groceries' from the to-do list,delete
+Add 'Call Sarah',add
+Add 'Fix the roof',add
+Add 'Buy new shoes',add
+Add 'Pick up prescriptions' to my tasks,add
+Include 'Buy concert tickets' in the list,add
+Add 'Arrange meeting with clients' as a task,add
+Insert 'Plan weekend trip' to the to-do list,add
+Put 'Call Alice for updates' on my list,add
+Add 'Renew gym membership' to the tasks,add
+Append 'Research new project ideas' to my list,add
+Add 'Buy ingredients for dinner' to the list,add
+Add 'Fix the leaky faucet' to my to-do list,add
+Delete the second task,delete
+Remove 'Cancel subscription' from tasks,delete
+Take 'Read a novel' off my list,delete
+Delete 'Sort emails' from the list,delete
+Remove the fifth item from my tasks,delete
+Delete 'Check out library books' from my list,delete
+Erase the last task,delete
+Remove 'Return borrowed items' from tasks,delete
+Delete 'Send invitations' from the to-do list,delete
+Wrap up the conversation,exit
+Conclude the chat,exit
+Finish interacting,exit
+Terminate the session,exit
+End the dialogue,exit
+Complete the discussion,exit
+Close the interaction,exit
+Finalize the conversation,exit
+Wrap things up,exit
+Halt the chat,exit
+Finish the exchange,exit
+Conclude the session,exit
+Terminate the conversation,exit
+End the chat session,exit
+List the upcoming to-dos,view
+Show scheduled events,view
+Present the task list,view
+View planned appointments,view
+Display the task list,view
+List scheduled meetings,view
+Show my upcoming tasks,view
+Present the to-do items,view
+Display the event schedule,view
+List upcoming activities,view
+Show my task schedule,view
+Present the current tasks,view
+Display the appointment list,view
+List planned assignments,view
+Show my scheduled tasks,view
+Present the current to-dos,view
+Display the meeting schedule,view
+List ongoing commitments,view
+Show me my upcoming appointments,view
+Terminate the interaction,exit

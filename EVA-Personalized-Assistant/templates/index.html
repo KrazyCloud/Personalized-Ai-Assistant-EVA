@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Chatbot</title>
+   <style>
+       /* Add CSS styles for improved layout and appearance */
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #3AAFA9;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+       }
+       #chat {
+           width: 500px;
+           background-color: #E6E6FA;
+           border: 1px solid #ccc;
+           border-radius: 50px;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+           padding: 20px;
+           box-sizing: border-box;
+           position: relative;
+           overflow: hidden;
+       }
+       #chat-history {
+           height: 300px;
+           overflow-y: auto;
+       }
+       .message {
+           margin-bottom: 10px;
+           padding: 10px;
+           border-radius: 5px;
+       }
+       .user-message {
+           background-color: #e1f7e7;
+           text-align: right;
+       }
+       .bot-message {
+           background-color: #FFB6C1;
+           text-align: left;
+       }
+       #user-input-form {
+           display: flex;
+           align-items: center;
+           margin-top: 20px;
+       }
+       #user_input {
+           flex: 1;
+           padding: 10px;
+           border: 1px solid #ccc;
+           background-color: #FAFAE6;
+           border-radius: 50px;
+           font-size: 16px;
+       }
+       #send-button, #voice-button {
+           margin-left: 5px;
+           background-color: #a881af;
+           color: #fff;
+           border: none;
+           border-radius: 50px;
+           padding: 10px 20px;
+           cursor: pointer;
+           font-size: 16px;
+           transition: background-color 0.3s ease;
+       }
+       #send-button:hover, #voice-button:hover {
+           background-color: #80669d;
+       }
+       /* CSS for centering the image at the top */
+       .navbar-brand {
+           display: flex;
+           justify-content: center;
+           margin-bottom: 20px; /* Add some space between the image and chat messages */
+       }
+   </style>
+</head>
+<body>
+   <div id="chat">
+       <a class="navbar-brand"><img src="C:/Users/karan/Desktop/eva/templates/evatouch.png" style="width: 270px; height: auto;"></a>
+       <div id="chat-history">
+           <!-- Bot responses and user messages will be displayed here -->
+       </div>
+       <form id="user-input-form" action="/chat" method="POST">
+           <input type="text" id="user_input" name="voice_input" placeholder="Type your message...">
+           <button type="button" id="send-button" onclick="sendMessage()">Send</button>
+           <button type="button" id="voice-button" onclick="startVoiceRecognition()">Voice</button>
+       </form>
+   </div>
+    
+    <script>
+    const chatContainer = document.getElementById('chat-container');
+    const voiceInput = document.getElementById('voice-input');
+    const voiceButton = document.getElementById('voice-button');
+    const voiceInputForm = document.getElementById('voice-input-form');
+
+    voiceButton.addEventListener('click', () => {
+        // Code to trigger voice input and handle the recognized text
+        // You can use a speech recognition library or API here
+
+        // For demonstration purposes, simulate a recognized voice input
+        const recognizedText = 'Hello, how can I help you?';
+
+        // Update the input field with recognized text
+        voiceInput.value = recognizedText;
+
+        // Generate the response from the chatbot
+        const response = 'Sure, I can help you with that.';
+
+        // Display the recognized text and chatbot response
+        chatContainer.innerHTML += `<div>You (Text): ${recognizedText}</div>`;
+        chatContainer.innerHTML += `<div>Chatbot: ${response}</div>`;
+
+        // Speak the chatbot response
+        textToSpeech(response);
+    });
+
+    // Function to speak text
+    function textToSpeech(text) {
+        // Implement text-to-speech logic here
+        // Use your preferred text-to-speech library or API
+        // For demonstration, simply log the text
+        console.log(`Speaking: ${text}`);
+    }
+    // JavaScript to handle user input and display responses
+    function displayMessage(sender, message) {
+        const chatHistory = document.getElementById("chat-history");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = "message " + (sender === "User" ? "user-message" : "bot-message");
+        messageDiv.textContent = sender + ": " + message;
+        chatHistory.appendChild(messageDiv);
+        chatHistory.scrollTop = chatHistory.scrollHeight; // Scroll to the bottom
+    }
+
+    function sendMessage() {
+        const user_input = document.getElementById("user_input").value;
+        displayMessage("User", user_input);
+
+        fetch('/chat', {
+            method: 'POST',
+            body: new URLSearchParams({ voice_input: user_input }),
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        })
+        .then(response => response.text())
+        .then(data => {
+            const botResponse = data;
+            console.log("Bot response:", botResponse);
+            displayMessage("EVA", botResponse);
+        })
+        .catch(error => console.error(error));
+
+        document.getElementById("user_input").value = "";
+    }
+
+    function startVoiceRecognition() {
+        // Create a new instance of the SpeechRecognition object
+        const recognition = new webkitSpeechRecognition();
+
+        // Configure recognition settings (you can adjust these as needed)
+        recognition.lang = 'en-US'; // Set the language to English
+        recognition.interimResults = false; // Disable interim results
+
+        // Start listening for speech
+        recognition.start();
+
+        // Handle recognition results
+        recognition.onresult = function(event) {
+            const recognizedText = event.results[0][0].transcript;
+            document.getElementById("user_input").value = recognizedText;
+            sendMessage(); // Automatically send the recognized text as a message
+        };
+
+        // Handle errors
+        recognition.onerror = function(event) {
+            console.error("Speech recognition error:", event.error);
+        };
+    }
+
+    // Add event listener to input field for pressing Enter key
+    document.getElementById("user_input").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); // Prevent the default behavior of the Enter key
+            document.getElementById("send-button").click(); // Trigger a click on the "Send" button
+        }
+    });
+</script>
+</body>
+</html>

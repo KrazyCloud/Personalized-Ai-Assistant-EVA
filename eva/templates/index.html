@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Chatbot</title>
+   <style>
+       /* Add CSS styles for improved layout and appearance */
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f2f2f2;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+       }
+       #chat {
+           max-width: 500px;
+           background-color: #E6E6FA;
+           border: 1px solid #ccc;
+           border-radius: 50px;
+           box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+           padding: 20px;
+           box-sizing: border-box;
+           position: relative;
+           overflow: hidden;
+       }
+       #chat-history {
+           height: 300px;
+           overflow-y: auto;
+       }
+       .message {
+           margin-bottom: 10px;
+           padding: 10px;
+           border-radius: 5px;
+       }
+       .user-message {
+           background-color: #e1f7e7;
+           text-align: right;
+       }
+       .bot-message {
+           background-color: #FFB6C1;
+           text-align: left;
+       }
+       #user-input-form {
+           display: flex;
+           align-items: center;
+           margin-top: 20px;
+       }
+       #user_input {
+           flex: 1;
+           padding: 10px;
+           border: 1px solid #ccc;
+           background-color: #FAFAE6;
+           border-radius: 50px;
+           font-size: 16px;
+       }
+       #send-button {
+           margin-left: 5px;
+           background-color: #a881af;
+           color: #fff;
+           border: none;
+           border-radius: 50px;
+           padding: 10px 20px;
+           cursor: pointer;
+           font-size: 16px;
+           transition: background-color 0.3s ease;
+       }
+       #send-button:hover {
+        background-color: #80669d;
+        }
+
+        /* CSS for centering the image at the top */
+       .navbar-brand {
+           display: flex;
+           justify-content: center;
+           margin-bottom: 20px; /* Add some space between the image and chat messages */
+        }
+
+   </style>
+</head>
+<body>
+    
+   <div id="chat">
+    <a class="navbar-brand"><img src="/templates/evatouch.png" style="width: 270px; height: auto;"></a>
+       <div id="chat-history">
+           <!-- Bot responses and user messages will be displayed here -->
+       </div>
+       <form id="user-input-form" action="/get_response" method="POST">
+           <input type="text" id="user_input" placeholder="Type your message...">
+           <button type="button" id="send-button" onclick="sendMessage()">Send</button>
+       </form>
+   </div>
+   <script>
+       // JavaScript to handle user input and display responses
+       function displayMessage(sender, message) {
+           const chatHistory = document.getElementById("chat-history");
+           const messageDiv = document.createElement("div");
+           messageDiv.className = "message " + (sender === "User" ? "user-message" : "bot-message");
+           messageDiv.textContent = sender + ": " + message;
+           chatHistory.appendChild(messageDiv);
+           chatHistory.scrollTop = chatHistory.scrollHeight; // Scroll to the bottom
+       }
+
+       function sendMessage() {
+           const user_input = document.getElementById("user_input").value;
+           displayMessage("User", user_input);
+
+           fetch('/get_response', {
+               method: 'POST',
+               body: new URLSearchParams({ user_input: user_input }),
+               headers: {
+                   'Content-Type': 'application/x-www-form-urlencoded'
+               }
+           })
+           .then(response => response.json())
+           .then(data => {
+               const botResponse = data.response;
+               console.log("Bot response:", botResponse);
+               displayMessage("EVA", botResponse);
+           })
+           .catch(error => console.error(error));
+
+           document.getElementById("user_input").value = "";
+       }
+
+       // Add event listener to input field for pressing Enter key
+       document.getElementById("user_input").addEventListener("keydown", function(event) {
+           if (event.key === "Enter") {
+               event.preventDefault(); // Prevent the default behavior of the Enter key
+               document.getElementById("send-button").click(); // Trigger a click on the "Send" button
+           }
+       });
+       
+   </script>
+</body>
+</html>

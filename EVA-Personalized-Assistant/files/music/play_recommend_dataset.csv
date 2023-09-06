@@ -1,0 +1,182 @@
+message,intent
+"""Recommend music.""",recommend
+"""Looking for new songs.""",recommend
+"""Playlist suggestions?""",recommend
+"""Need good music.""",recommend
+"""Best tracks to listen to?""",recommend
+"""Any cool albums?""",recommend
+"""Tell me a song to hear.""",recommend
+"""Looking for music inspiration.""",recommend
+"""Favorite artists?""",recommend
+"""Play some music.""",play
+"""Let's listen to songs.""",play
+"""Time for music.""",play
+"""Play my playlist.""",play
+"""Turn on the music.""",play
+"""Let the music play.""",play
+"""Play upbeat songs.""",play
+"""Start the tunes.""",play
+"""Play something energetic.""",play
+"""Time to enjoy music.""",play
+"""Need some song recommendations.""",recommend
+"""Tell me your favorite song.""",recommend
+"""Looking for music suggestions.""",recommend
+"""Recommend songs for a road trip.""",recommend
+"""Looking for top hits to listen to.""",recommend
+"""Playlist needs a refresh. Suggestions?""",recommend
+"""Point me to great music.""",recommend
+"""Discover new music for me.""",recommend
+"""Any favorite albums to recommend?""",recommend
+"""I'm curious about music recommendations.""",recommend
+"""Play some songs for me.""",recommend
+"""Seeking new melodies to enjoy.""",recommend
+"""Suggest music for a cozy evening.""",recommend
+"""Looking for something unique to listen to.""",recommend
+"""Feeling musical. Recommend me something.""",recommend
+"""Hit me up with music recommendations.""",recommend
+"""Play me a song you think I'd like.""",recommend
+"""Looking for feel-good tunes. Suggestions?""",recommend
+"""Give me some music tips.""",recommend
+"""Any new artists to recommend?""",recommend
+"""Play some groovy tunes.""",recommend
+"""Time for a music adventure. Suggestions?""",recommend
+"""Looking for fresh tracks.""",recommend
+"""Playlist needs some variety. Recommend?""",recommend
+"""Share a song that brings joy.""",recommend
+"""Recommend songs for a chill session.""",recommend
+"""Any classic hits you'd recommend?""",recommend
+"""Tell me a song I can't miss.""",recommend
+"""Seeking recommendations for upbeat music.""",recommend
+"""Let's talk music. Any suggestions?""",recommend
+"""Looking for songs with great lyrics. Ideas?""",recommend
+"""Recommend music for a rainy day.""",recommend
+"""Hit me with your favorite music.""",recommend
+"""Share a song that makes you smile.""",recommend
+"""Looking for songs with a summer vibe.""",recommend
+"""Discover new music trends for me.""",recommend
+"""Play something that suits my mood.""",recommend
+"""Need music to match my coffee. Suggestions?""",recommend
+"""Recommend songs for a workout playlist.""",recommend
+"""Let's talk tunes. What's your recommendation?""",recommend
+"""Share a song that tells a story.""",recommend
+"""Looking for songs to play at a party. Ideas?""",recommend
+"""Give me a song that's perfect for driving.""",recommend
+"""Discover music that brings positive energy.""",recommend
+"""Play something that gets you dancing.""",recommend
+"""Recommend songs for a relaxing evening.""",recommend
+"""Tell me a song with a great melody.""",recommend
+"""Looking for songs to lift my spirits. Suggestions?""",recommend
+"""Any songs that never get old? Recommend.""",recommend
+"""Share a song that's good for a morning jog.""",recommend
+"""Need a song to match my wanderlust. Ideas?""",recommend
+"""Recommend songs with impressive vocals.""",recommend
+"""Let's talk music. Share your picks.""",recommend
+"""Looking for songs that give a sense of adventure. Suggestions?""",recommend
+"""Play something that brings back memories.""",recommend
+"""Recommend songs that make you feel alive.""",recommend
+"""Tell me a song you'd listen to on a rainy day.""",recommend
+"""Looking for songs that tell a deep story. Ideas?""",recommend
+"""Need a song to relax my mind. Recommendations?""",recommend
+"""Play a song that transports you to another place.""",recommend
+"""Recommend songs that capture the spirit of summer.""",recommend
+"""Let's talk tunes. What songs do you love?""",recommend
+"""Looking for songs that make you contemplate life. Suggestions?""",recommend
+"""Share a song that's perfect for a sunset.""",recommend
+"""Tell me a song that's both soothing and energetic.""",recommend
+"""Need a song to boost my creativity. Ideas?""",recommend
+"""Recommend songs that make you want to dance.""",recommend
+"""Play something that puts you in a good mood.""",recommend
+"""Looking for songs that make you appreciate nature. Suggestions?""",recommend
+"""Give me a song that's ideal for a road trip.""",recommend
+"""Tell me a song that feels like a warm hug.""",recommend
+"""Recommend songs for a study playlist.""",recommend
+"""Let's talk music. Share your musical tastes.""",recommend
+"""Looking for songs that reflect the changing seasons. Ideas?""",recommend
+"""Need a song that matches a starry night. Suggestions?""",recommend
+"""Play something that resonates with your emotions.""",recommend
+"""Recommend songs that make you reflect on life.""",recommend
+"""Looking for songs that give you a sense of freedom. Ideas?""",recommend
+"""Tell me a song that brings back childhood memories.""",recommend
+"""Need a song that captures the essence of a city. Suggestions?""",recommend
+"""Play a song that's perfect for a lazy afternoon.""",recommend
+"""Recommend songs that make you feel empowered.""",recommend
+"""Let's talk tunes. What's your go-to song?""",recommend
+"""Play some tunes.""",play
+"""Let's enjoy some music.""",play
+"""Turn on my favorite playlist.""",play
+"""Play relaxing songs.""",play
+"""Need background music. Start playing.""",play
+"""Initiate a music session.""",play
+"""Let's have a music break.""",play
+"""Time to play some tracks.""",play
+"""Play something soothing.""",play
+"""Ready to groove. Start the music.""",play
+"""Play upbeat tracks.""",play
+"""Let's listen to some jams.""",play
+"""Turn up the volume and play music.""",play
+"""Play my favorite songs.""",play
+"""Time to jam out. Play music.""",play
+"""Play something energetic and fun.""",play
+"""Start the musical journey.""",play
+"""Play songs that match my mood.""",play
+"""Let's dance. Play some music.""",play
+"""Ready for a music party. Start playing.""",play
+"""Play songs that make you feel alive.""",play
+"""Time to enjoy the beats. Play music.""",play
+"""Play a song that gets you moving.""",play
+"""Initiate a musical experience.""",play
+"""Let's have a jam session. Play music.""",play
+"""Play music to brighten up the day.""",play
+"""Play songs for a positive vibe.""",play
+"""Time to unwind with some music.""",play
+"""Play tracks that make you smile.""",play
+"""Let's groove. Play some music.""",play
+"""Ready to play some soulful tunes.""",play
+"""Play music that brings back memories.""",play
+"""Play music to lift spirits.""",play
+"""Start the beats and play music.""",play
+"""Time to immerse in melodies. Play music.""",play
+"""Play songs for a relaxing evening.""",play
+"""Initiate the music playlist.""",play
+"""Let's unwind with some tunes. Play music.""",play
+"""Play tracks for a laid-back vibe.""",play
+"""Ready for a musical interlude. Start playing.""",play
+"""Play a song that sets the tone.""",play
+"""Time to enjoy the rhythm. Play music.""",play
+"""Play music that matches the ambiance.""",play
+"""Initiate a groovy music session.""",play
+"""Let's play something inspiring.""",play
+"""Play tracks that create a soothing atmosphere.""",play
+"""Ready for some musical magic. Start playing.""",play
+"""Play songs that take you on a journey.""",play
+"""Time to play melodies for the soul.""",play
+"""Play music that makes you want to sing along.""",play
+"""Initiate the musical experience.""",play
+"""Let's have a musical escape. Play music.""",play
+"""Play tracks that make time stand still.""",play
+"""Ready to play songs that touch the heart.""",play
+"""Play music to accompany creativity.""",play
+"""Play tunes that make you sway.""",play
+"""Time to play melodies that spark joy.""",play
+"""Play music that resonates with emotions.""",play
+"""Initiate a symphony of sounds.""",play
+"""Let's have a melody-filled moment. Play music.""",play
+"""Play tracks for a perfect day.""",play
+"""Ready for a dose of musical energy. Start playing.""",play
+"""Play music that turns the ordinary into extraordinary.""",play
+"""Play songs that create a magical atmosphere.""",play
+"""Start the beats and play some tunes.""",play
+"""Time to immerse in the melodies. Play music.""",play
+"""Play songs to create a calm evening.""",play
+"""Initiate the music playlist for relaxation.""",play
+"""Let's unwind with some soothing tunes. Play music.""",play
+"""Play tracks for a peaceful vibe.""",play
+"""Ready for a musical break. Start playing.""",play
+"""Play a song to set the mood right.""",play
+"""Time to enjoy the rhythm and melodies. Play music.""",play
+"""Play music that matches the ambiance perfectly.""",play
+"""Initiate a groovy music session to uplift spirits.""",play
+"""Let's play something inspiring and uplifting.""",play
+"""Play tracks that create a serene atmosphere.""",play
+"""Ready for a dose of musical magic. Let's start playing.""",play
+"""Play songs that take you on a musical journey.""",play
